@@ -22,7 +22,7 @@ func (a *App) Initialize(client dapr.Client) {
 }
 
 func (a *App) Hello(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Hello world! It's me"))
+	w.Write([]byte("VERSION 1"))
 }
 
 func (a *App) GetInventory(w http.ResponseWriter, r *http.Request) {
